@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		306A246519425542005FB45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A246419425542005FB45D /* AppDelegate.swift */; };
 		306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306A246619425542005FB45D /* displayen.xcdatamodeld */; };
-		306A246A19425542005FB45D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A246919425542005FB45D /* ViewController.swift */; };
 		306A246D19425542005FB45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306A246B19425542005FB45D /* Main.storyboard */; };
 		306A246F19425542005FB45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306A246E19425542005FB45D /* Images.xcassets */; };
 		306A247B19425542005FB45D /* displayenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A247A19425542005FB45D /* displayenTests.swift */; };
+		306A248519425945005FB45D /* EnterTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A248419425945005FB45D /* EnterTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 		306A246319425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A246419425542005FB45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306A246719425542005FB45D /* displayen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = displayen.xcdatamodel; sourceTree = "<group>"; };
-		306A246919425542005FB45D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		306A246C19425542005FB45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		306A246E19425542005FB45D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		306A247419425542005FB45D /* displayenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = displayenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		306A247919425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A247A19425542005FB45D /* displayenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayenTests.swift; sourceTree = "<group>"; };
+		306A248419425945005FB45D /* EnterTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterTextViewController.swift; path = ../EnterTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				306A246419425542005FB45D /* AppDelegate.swift */,
-				306A246919425542005FB45D /* ViewController.swift */,
+				306A248419425945005FB45D /* EnterTextViewController.swift */,
 				306A246B19425542005FB45D /* Main.storyboard */,
 				306A246E19425542005FB45D /* Images.xcassets */,
 				306A246619425542005FB45D /* displayen.xcdatamodeld */,
@@ -211,8 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306A246A19425542005FB45D /* ViewController.swift in Sources */,
 				306A246519425542005FB45D /* AppDelegate.swift in Sources */,
+				306A248519425945005FB45D /* EnterTextViewController.swift in Sources */,
 				306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = displayen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -341,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = displayen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
