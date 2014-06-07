@@ -29,11 +29,9 @@ class EnterTextViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if segue.identifier == "ShowTextView" {
-            if let targetViewController = segue.destinationViewController as? ShowTextViewController {
-                targetViewController.setTitle(title: "\(textInputField.text)")
-                targetViewController.setTextInfo(textInfo: textInputField.text)
-            }
+        if let targetViewController = segue.destinationViewController as? ShowTextViewController {
+            targetViewController.setTitle(title: "\(textInputField.text)")
+            targetViewController.setTextInfo(textInfo: textInputField.text)
         }
     }
 }
