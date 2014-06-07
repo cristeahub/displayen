@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3036CEE919435910001F181A /* FullscreenTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036CEE819435910001F181A /* FullscreenTextViewController.swift */; };
 		306A246519425542005FB45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A246419425542005FB45D /* AppDelegate.swift */; };
 		306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306A246619425542005FB45D /* displayen.xcdatamodeld */; };
 		306A246D19425542005FB45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306A246B19425542005FB45D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3036CEE819435910001F181A /* FullscreenTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenTextViewController.swift; sourceTree = "<group>"; };
 		306A245F19425542005FB45D /* displayen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = displayen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306A246319425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A246419425542005FB45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				306A246419425542005FB45D /* AppDelegate.swift */,
 				306A248419425945005FB45D /* EnterTextViewController.swift */,
+				3036CEE819435910001F181A /* FullscreenTextViewController.swift */,
 				306AEC1C1942832600941DAA /* ShowTextViewController.swift */,
 				306A246B19425542005FB45D /* Main.storyboard */,
 				306A246E19425542005FB45D /* Images.xcassets */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				306AEC1D1942832600941DAA /* ShowTextViewController.swift in Sources */,
+				3036CEE919435910001F181A /* FullscreenTextViewController.swift in Sources */,
 				306A246519425542005FB45D /* AppDelegate.swift in Sources */,
 				306A248519425945005FB45D /* EnterTextViewController.swift in Sources */,
 				306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */,

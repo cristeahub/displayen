@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ywk-cI-hQP">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
@@ -65,7 +64,7 @@
                     <navigationItem key="navigationItem" title="displayen" id="omF-uQ-Gli"/>
                     <connections>
                         <outlet property="textInputField" destination="xwU-eT-pCC" id="nsW-vt-MI4"/>
-                        <segue destination="OvR-98-5SB" kind="show" identifier="ShowTextView" id="93n-2s-vwM"/>
+                        <segue destination="OvR-98-5SB" kind="show" identifier="ShowTextViewSegue" id="93n-2s-vwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66o-4g-8K5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,11 +101,48 @@
                     </view>
                     <connections>
                         <outlet property="textLabel" destination="TUp-Qk-Xyu" id="flE-Gk-yNo"/>
+                        <segue destination="esF-ES-uT5" kind="custom" identifier="FullscreenTextViewSegue" id="eTL-hE-xNa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oxv-jo-MN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1237" y="349"/>
+        </scene>
+        <!--Fullscreen Text View Controller-->
+        <scene sceneID="Sky-rV-o6r">
+            <objects>
+                <viewController storyboardIdentifier="FullscreenTextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="esF-ES-uT5" customClass="FullscreenTextViewController" customModule="displayen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UIx-ye-kBX"/>
+                        <viewControllerLayoutGuide type="bottom" id="tSC-2m-hgK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mrv-2c-bfR">
+                        <rect key="frame" x="0.0" y="64" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="440" translatesAutoresizingMaskIntoConstraints="NO" id="W0M-43-ZLi">
+                                <rect key="frame" x="20" y="20" width="440" height="440"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W0M-43-ZLi" firstAttribute="leading" secondItem="Mrv-2c-bfR" secondAttribute="leading" constant="20" symbolic="YES" id="6iW-U9-hJb"/>
+                            <constraint firstAttribute="trailing" secondItem="W0M-43-ZLi" secondAttribute="trailing" constant="20" symbolic="YES" id="Uid-qY-v0b"/>
+                            <constraint firstItem="W0M-43-ZLi" firstAttribute="top" secondItem="Mrv-2c-bfR" secondAttribute="top" constant="20" symbolic="YES" id="XNL-qM-bRa"/>
+                            <constraint firstAttribute="bottom" secondItem="W0M-43-ZLi" secondAttribute="bottom" constant="20" symbolic="YES" id="e5P-VC-cmT"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullscreenLabel" destination="W0M-43-ZLi" id="ITm-at-ked"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUR-SH-3Xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="426"/>
         </scene>
     </scenes>
 </document>

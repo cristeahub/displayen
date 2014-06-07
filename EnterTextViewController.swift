@@ -13,7 +13,7 @@ class EnterTextViewController: UIViewController {
     @IBOutlet var textInputField : UITextField = nil
 
     @IBAction func textFieldReturn(sender : UITextField) {
-        self.performSegueWithIdentifier("ShowTextView", sender: self)
+        self.performSegueWithIdentifier("ShowTextViewSegue", sender: self)
     }
 
     override func viewDidLoad() {
