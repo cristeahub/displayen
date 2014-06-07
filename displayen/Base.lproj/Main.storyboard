@@ -18,12 +18,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Spg-gn-hHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-59" y="349"/>
+            <point key="canvasLocation" x="-35" y="349"/>
         </scene>
         <!--Enter Text View Controller - displayen-->
         <scene sceneID="e2t-ry-8VA">
             <objects>
-                <viewController id="4cS-iR-pIT" customClass="EnterTextViewController" customModule="displayen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterTextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4cS-iR-pIT" customClass="EnterTextViewController" customModule="displayen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="COK-ab-a7V"/>
                         <viewControllerLayoutGuide type="bottom" id="jBj-aV-DcN"/>
@@ -43,11 +43,6 @@
                                             <action selector="textFieldReturn:" destination="4cS-iR-pIT" eventType="editingDidEndOnExit" id="jeE-UA-d1y"/>
                                         </connections>
                                     </textField>
-                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yor-HB-HU2">
-                                        <rect key="frame" x="42" y="218" width="200" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="Show!"/>
-                                    </button>
                                     <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter text to be displayed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDc-9p-8Bl">
                                         <rect key="frame" x="28" y="44" width="229" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,13 +63,46 @@
                     </view>
                     <navigationItem key="navigationItem" title="displayen" id="omF-uQ-Gli"/>
                     <connections>
-                        <outlet property="showTextButton" destination="yor-HB-HU2" id="uNV-kO-9DH"/>
                         <outlet property="textInputField" destination="xwU-eT-pCC" id="nsW-vt-MI4"/>
+                        <segue destination="OvR-98-5SB" kind="show" identifier="ShowTextView" id="93n-2s-vwM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66o-4g-8K5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573" y="349"/>
+            <point key="canvasLocation" x="583" y="349"/>
+        </scene>
+        <!--Show Text View Controller-->
+        <scene sceneID="cZ5-Fd-UMH">
+            <objects>
+                <viewController storyboardIdentifier="ShowTextView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OvR-98-5SB" customClass="ShowTextViewController" customModule="displayen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5kQ-lH-qfQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="56f-rV-cm7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NeU-ln-6uK">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some text here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-Qk-Xyu">
+                                <rect key="frame" x="20" y="77" width="440" height="383"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TUp-Qk-Xyu" firstAttribute="leading" secondItem="NeU-ln-6uK" secondAttribute="leading" constant="20" symbolic="YES" id="2pe-Jp-6NC"/>
+                            <constraint firstAttribute="trailing" secondItem="TUp-Qk-Xyu" secondAttribute="trailing" constant="20" symbolic="YES" id="MY7-30-bzw"/>
+                            <constraint firstItem="TUp-Qk-Xyu" firstAttribute="top" secondItem="5kQ-lH-qfQ" secondAttribute="bottom" constant="13" id="Z8T-tA-7vJ"/>
+                            <constraint firstAttribute="bottom" secondItem="TUp-Qk-Xyu" secondAttribute="bottom" constant="20" symbolic="YES" id="h9E-Rr-d4P"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oxv-jo-MN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237" y="349"/>
         </scene>
     </scenes>
 </document>

@@ -11,17 +11,15 @@ import UIKit
 class EnterTextViewController: UIViewController {
 
     @IBOutlet var textInputField : UITextField = nil
-    @IBOutlet var showTextButton : UIButton = nil
 
     @IBAction func textFieldReturn(sender : UITextField) {
-        sender.resignFirstResponder()
+        self.performSegueWithIdentifier("ShowTextView", sender: self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tap = UITapGestureRecognizer(target: self, action: "handleTap")
-        self.view.addGestureRecognizer(tap)
+        textInputField.becomeFirstResponder()
         println("EnterTextViewController loaded")
     }
 
@@ -29,8 +27,13 @@ class EnterTextViewController: UIViewController {
         super.didReceiveMemoryWarning()
         println("EnterTextViewController did recieve memeory warning")
     }
-
-    func handleTap() {
-        self.textInputField.resignFirstResponder()
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if segue.identifier == "ShowTextView" {
+            if let targetViewController = segue.destinationViewController as? ShowTextViewController {
+                targetViewController.setTitle(title: "\(textInputField.text)")
+                targetViewController.setTextInfo(textInfo: textInputField.text)
+            }
+        }
     }
 }

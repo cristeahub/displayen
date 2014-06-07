@@ -13,6 +13,7 @@
 		306A246F19425542005FB45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306A246E19425542005FB45D /* Images.xcassets */; };
 		306A247B19425542005FB45D /* displayenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A247A19425542005FB45D /* displayenTests.swift */; };
 		306A248519425945005FB45D /* EnterTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A248419425945005FB45D /* EnterTextViewController.swift */; };
+		306AEC1D1942832600941DAA /* ShowTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AEC1C1942832600941DAA /* ShowTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		306A247919425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A247A19425542005FB45D /* displayenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayenTests.swift; sourceTree = "<group>"; };
 		306A248419425945005FB45D /* EnterTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterTextViewController.swift; path = ../EnterTextViewController.swift; sourceTree = "<group>"; };
+		306AEC1C1942832600941DAA /* ShowTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				306A246419425542005FB45D /* AppDelegate.swift */,
 				306A248419425945005FB45D /* EnterTextViewController.swift */,
+				306AEC1C1942832600941DAA /* ShowTextViewController.swift */,
 				306A246B19425542005FB45D /* Main.storyboard */,
 				306A246E19425542005FB45D /* Images.xcassets */,
 				306A246619425542005FB45D /* displayen.xcdatamodeld */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306AEC1D1942832600941DAA /* ShowTextViewController.swift in Sources */,
 				306A246519425542005FB45D /* AppDelegate.swift in Sources */,
 				306A248519425945005FB45D /* EnterTextViewController.swift in Sources */,
 				306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */,
@@ -403,6 +407,7 @@
 				306A248019425542005FB45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		306A248119425542005FB45D /* Build configuration list for PBXNativeTarget "displayenTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +416,7 @@
 				306A248319425542005FB45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
