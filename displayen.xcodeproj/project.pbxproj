@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3036CEE919435910001F181A /* FullscreenTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036CEE819435910001F181A /* FullscreenTextViewController.swift */; };
+		3036CEEB1943D629001F181A /* EnterTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3036CEEA1943D629001F181A /* EnterTextViewController.swift */; };
 		306A246519425542005FB45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A246419425542005FB45D /* AppDelegate.swift */; };
 		306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306A246619425542005FB45D /* displayen.xcdatamodeld */; };
 		306A246D19425542005FB45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306A246B19425542005FB45D /* Main.storyboard */; };
 		306A246F19425542005FB45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306A246E19425542005FB45D /* Images.xcassets */; };
 		306A247B19425542005FB45D /* displayenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A247A19425542005FB45D /* displayenTests.swift */; };
-		306A248519425945005FB45D /* EnterTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A248419425945005FB45D /* EnterTextViewController.swift */; };
 		306AEC1D1942832600941DAA /* ShowTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306AEC1C1942832600941DAA /* ShowTextViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3036CEE819435910001F181A /* FullscreenTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullscreenTextViewController.swift; sourceTree = "<group>"; };
+		3036CEEA1943D629001F181A /* EnterTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterTextViewController.swift; sourceTree = "<group>"; };
 		306A245F19425542005FB45D /* displayen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = displayen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306A246319425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A246419425542005FB45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		306A247419425542005FB45D /* displayenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = displayenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		306A247919425542005FB45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306A247A19425542005FB45D /* displayenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayenTests.swift; sourceTree = "<group>"; };
-		306A248419425945005FB45D /* EnterTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterTextViewController.swift; path = ../EnterTextViewController.swift; sourceTree = "<group>"; };
 		306AEC1C1942832600941DAA /* ShowTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				306A246419425542005FB45D /* AppDelegate.swift */,
-				306A248419425945005FB45D /* EnterTextViewController.swift */,
+				3036CEEA1943D629001F181A /* EnterTextViewController.swift */,
 				3036CEE819435910001F181A /* FullscreenTextViewController.swift */,
 				306AEC1C1942832600941DAA /* ShowTextViewController.swift */,
 				306A246B19425542005FB45D /* Main.storyboard */,
@@ -217,10 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3036CEEB1943D629001F181A /* EnterTextViewController.swift in Sources */,
 				306AEC1D1942832600941DAA /* ShowTextViewController.swift in Sources */,
 				3036CEE919435910001F181A /* FullscreenTextViewController.swift in Sources */,
 				306A246519425542005FB45D /* AppDelegate.swift in Sources */,
-				306A248519425945005FB45D /* EnterTextViewController.swift in Sources */,
 				306A246819425542005FB45D /* displayen.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
