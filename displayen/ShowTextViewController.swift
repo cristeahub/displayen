@@ -27,14 +27,6 @@ class ShowTextViewController : UIViewController {
         println("ShowTextViewController did recieve memory warning")
     }
 
-    func setTitle(#title:String) {
-        self.title = title
-    }
-
-    func setTextInfo(#textInfo:String) {
-        self.textInfo = textInfo
-    }
-
     func scaleLabelToInput() {
         self.textLabel.adjustsFontSizeToFitWidth = true
     }
